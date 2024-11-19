@@ -33,4 +33,4 @@ Viewing the Project
 Running Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/landing-page.git
+   git clone https://github.com/Lucas5252git/-Responsive-Landing-Page.git
