@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Gadget - Landing Page</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+      .gallery-img {
+        transition: transform 0.3s ease;
+      }
+      .gallery-img:hover {
+        transform: scale(1.1);
+      }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header Section (Bootstrap Navbar) -->
+  <header class="bg-white shadow-lg">
+    <nav class="navbar navbar-expand-lg navbar-light container">
+      <a class="navbar-brand text-orange-600 fw-bold" href="#">LUCAS GADGET</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-orange-600" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-orange-600" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link text-orange-600" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link text-orange-600" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section (Tailwind CSS) -->
+  <section class="bg-orange-600 text-white text-center py-20">
+    <div class="container">
+      <h1 class="text-4xl md:text-5xl font-bold">Welcome to Lucas Gadget Online Store</h1>
+      <p class="mt-4 text-lg md:text-xl">Discover Our Amazing Offers and Services.</p>
+      <a href="#about" class="mt-8 btn btn-light text-orange-600 fw-bold shadow-lg">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section (Bootstrap Cards) -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container text-center">
+      <h2 class="text-3xl fw-bold mb-5">About Us</h2>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-orange-600">Our Mission</h5>
+              <p class="card-text">To become the go-to destination for tech enthusiasts seeking high-quality gadgets.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-orange-600">Our Vision</h5>
+              <p class="card-text">Revolutionize the way people interact with technology through cutting-edge solutions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-orange-600">Our Values</h5>
+              <p class="card-text">Integrity, quality, and respect are at our core.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-orange-600">Our Team</h5>
+              <p class="card-text">A dedicated team of professionals ready to serve you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section (Bootstrap Carousel) -->
+  <section id="testimonials" class="bg-orange-50 py-20">
+    <div class="container">
+      <h2 class="text-3xl fw-bold text-center mb-5">Testimonials</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center">
+            <p class="fs-4 fst-italic">"Amazing experience with Lucas Gadget! Highly recommended."</p>
+            <p class="fw-bold">- Daniel Lucas</p>
+          </div>
+          <div class="carousel-item text-center">
+            <p class="fs-4 fst-italic">"Professional and dedicated service all the way!"</p>
+            <p class="fw-bold">- Favour Itodo</p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Gallery Section (Tailwind CSS with hover effect) -->
+  <section id="gallery" class="py-20 bg-white">
+    <div class="container">
+      <h2 class="text-3xl font-bold text-center mb-5">Gallery</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <img src="C:\Users\lenovo\Downloads\iphone-15-pro-max.png" class="gallery-img w-full object-cover rounded-lg shadow-md" alt="Gallery Image">
+        <img src="C:\Users\lenovo\Downloads\MACBOOK PRO.jpg" class="gallery-img w-full object-cover rounded-lg shadow-md" alt="Gallery Image">
+        <img src="C:\Users\lenovo\Downloads\IPADPRO.jpg" class="gallery-img w-full object-cover rounded-lg shadow-md" alt="Gallery Image">
+        <img src="C:\Users\lenovo\Downloads\IPHONES.jpg" class="gallery-img w-full object-cover rounded-lg shadow-md" alt="Gallery Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section (Tailwind CSS) -->
+  <footer id="contact" class="bg-orange-600 text-white py-10">
+    <div class="container text-center">
+      <h3 class="text-xl font-bold">Contact Us</h3>
+      <p>Shop A46 New Benex Plaza, Abuja, Nigeria</p>
+      <p>Email: lucaselijah6@gmail.com | Phone: +123 80642388</p>
+      <div class="d-flex justify-content-center mt-4 gap-3">
+        <a href="#" class="text-white text-decoration-none">Facebook</a>
+        <a href="#" class="text-white text-decoration-none">Twitter</a>
+        <a href="#" class="text-white text-decoration-none">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
